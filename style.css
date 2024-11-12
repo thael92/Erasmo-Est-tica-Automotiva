@@ -171,7 +171,7 @@ section {
     display: flex;
     left: 120rem;
     margin: -10px -10px;
-    top: 15px;
+    bottom: 15px;
     z-index: 2;
 }
 
@@ -180,7 +180,7 @@ section {
     display: flex;
     left: 120rem;
     margin: -10px -10px;
-    top: 70px;
+    bottom: 70px;
     z-index: 2;
 }
 
@@ -219,7 +219,7 @@ section {
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.589) 50%, rgba(10, 12, 16, 0.555) 100%);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     .modal {
         position: absolute;
         left: -119%;
