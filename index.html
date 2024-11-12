@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scripit.js">
+    <title>Erasmo</title>
+</head>
+
+<body>
+    <div class="caixa-video">
+        <video src="./video/video-pagina-principal1.mp4" loop muted autoplay></video>
+        <div class="mascara"></div>
+    </div>
+    <header class="header">
+        <section>
+            <a>
+                <img src="./img/logo.png" alt="logo">
+            </a>
+            <nav>
+                <a>Home</a>
+                <a class="scroll-sobre" onclick="MostrarSobre()">Sobre</a>
+                <a onclick="MostraModal()">Endereço</a>
+            </nav>
+        </section>
+    </header>
+
+    <section class="caixa-principal">
+        <div class="caixa-section">
+            <h3>Erasmo Estética Automotiva</h3>
+            <p>🚗Lavagem Simples e Detalhada🚗 | Higienização de Bancos | Hidratação de Couro | Revitalização de
+                Plásticos.Transforme seu veículo com um toque de qualidade e atenção aos detalhes!</p>
+            <a class="botão-link">Solicitar Orçamento</a>
+        </div>
+
+    </section>
+    <section class="caixa-sobre">
+        <h2 class="titulo"><span>Sobre</span> Nós</h2>
+        <div class="sobre-conteainer">
+            <div class="sobre-imagem">
+                <img src="./img/sobre-02.jpg" alt="Sobre Nós">
+            </div>
+            <div class="sobre-texto">
+                <h3>cuidamos do seu carro com o máximo de atenção e dedicação. </h3>
+                <p>Com serviços que vão desde lavagens
+                    simples até detalhadas, nossa missão é transformar o visual do seu veículo, mantendo-o sempre
+                    impecável e valorizado.</p>
+                <p> Contamos com uma equipe especializada em higienização de bancos, hidratação
+                    de couro e revitalização de plásticos, garantindo um acabamento de qualidade que supera as
+                    expectativas. Escolha a Erasmo para dar ao seu carro o tratamento que ele merece!</p>
+                <a class="botão-link" href="https://api.whatsapp.com/message/RTOTVRZWKRTRF1?autoload=1&app_absent=0" target=_blank rel=noopener
+                noreferrer>Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+    <div class="modal">
+        <h3 class="titulo"><span>Nosso</span> Endereço</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3958.7732147293236!2d-35.8567!3d-7.1522!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac21004e9495c9%3A0x22b7884d85d327f0!2sErasmo%20Est%C3%A9tica%20Automotiva!5e0!3m2!1spt-BR!2sbr!4v1731185169864!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="mascara1" onclick="EsconderModal()"></div>
+    <a href="https://api.whatsapp.com/message/RTOTVRZWKRTRF1?autoload=1&app_absent=0" target=_blank rel=noopener
+        noreferrer><img class="rede-social1" src="./img/icons8-whatsapp-48.png" alt="whatsapp"></a>
+    <a href="https://www.instagram.com/erasmoesteticaautomotiva/" target=_blank rel=noopener noreferrer><img
+            class="rede-social2" src="./img/icons-instagram.png" alt="instagram"></a>
+    <script src="./scripit.js"></script>
+</body>
+
+</html>
