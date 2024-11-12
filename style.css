@@ -79,26 +79,30 @@ section {
     padding-bottom: 0.5rem;
 }
 
-.caixa-principal{
+.caixa-principal {
     min-height: 100vh;
     display: flex;
     align-items: center;
 }
+
 .caixa-principal div {
     max-width: 60rem;
 }
-.caixa-principal div h3{
+
+.caixa-principal div h3 {
     color: #fff;
     font-size: 6rem;
     text-transform: uppercase;
 }
-.caixa-principal div p{
+
+.caixa-principal div p {
     font-size: 2rem;
     color: #fff;
     font-weight: lighter;
     padding: 1rem 0;
     line-height: 1.8;
 }
+
 .botão-link {
     background-color: var(--main-color);
     cursor: pointer;
@@ -110,6 +114,7 @@ section {
     border: none;
     transition: 0.6s linear;
 }
+
 .caixa-principal div a:hover {
     letter-spacing: 0.1rem;
 }
@@ -117,82 +122,94 @@ section {
 .titulo {
     text-align: center;
     color: #fff;
-    text-transform:uppercase;
+    text-transform: uppercase;
     padding-bottom: 3.5rem;
     font-size: 4rem;
 }
-.titulo span{
+
+.titulo span {
     color: var(--main-color);
 }
-.caixa-sobre .sobre-conteainer{
+
+.caixa-sobre .sobre-conteainer {
     display: flex;
     align-items: center;
     background-color: var(--black);
     gap: 1.5rem;
     flex-wrap: wrap;
 }
-.caixa-sobre .sobre-conteainer .sobre-imagem{
-    flex:1 1 45rem ;
+
+.caixa-sobre .sobre-conteainer .sobre-imagem {
+    flex: 1 1 45rem;
 }
-.caixa-sobre .sobre-conteainer .sobre-imagem img{
+
+.caixa-sobre .sobre-conteainer .sobre-imagem img {
     width: 100%;
 }
 
-.caixa-sobre .sobre-conteainer .sobre-texto{
-    flex:1 1 45rem ;
+.caixa-sobre .sobre-conteainer .sobre-texto {
+    flex: 1 1 45rem;
     padding: 2rem;
 }
-.caixa-sobre .sobre-conteainer .sobre-texto h3{
-font-size: 3rem;
-color: #fff;
-text-transform:uppercase;
+
+.caixa-sobre .sobre-conteainer .sobre-texto h3 {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
 }
-.caixa-sobre .sobre-conteainer .sobre-texto p{
-font-size: 1.8rem;
-font-weight: lighter;
-color: #fff;
-line-height: 1.8;
-padding: 1rem 0;
+
+.caixa-sobre .sobre-conteainer .sobre-texto p {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    color: #fff;
+    line-height: 1.8;
+    padding: 1rem 0;
 }
-.rede-social1{
+
+.rede-social1 {
     position: fixed;
     display: flex;
     left: 120rem;
     margin: -10px -10px;
-    top: 15px;
-    z-index: 2; 
+    bottom: 15px;
+    z-index: 2;
 }
-.rede-social2{
+
+.rede-social2 {
     position: fixed;
     display: flex;
     left: 120rem;
     margin: -10px -10px;
-    top: 70px;
-    z-index: 2; 
+    bottom: 70px;
+    z-index: 2;
 }
-.modal{
-display: flex;
-flex-direction: column;
-background-color: transparent;
-gap: 20px;
-z-index: 4;
-position: fixed;
-top: 50%;
-left: -30%;
-transform: translate(-50%, -50%);
-transition:left 1s linear;
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 20px;
+    z-index: 4;
+    position: fixed;
+    top: 50%;
+    left: -30%;
+    transform: translate(-50%, -50%);
+    transition: left 1s linear;
 }
-.titulo span{
+
+.titulo span {
     color: var(--main-color);
 }
-.titulo{
-font-size: 3rem;
-color: #fff;
-line-height: 1;
-padding: 1rem;
-text-align: center;
+
+.titulo {
+    font-size: 3rem;
+    color: #fff;
+    line-height: 1;
+    padding: 1rem;
+    text-align: center;
 }
-.mascara1{
+
+.mascara1 {
     visibility: hidden;
     z-index: 3;
     position: fixed;
@@ -200,4 +217,77 @@ text-align: center;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.589) 50%, rgba(10, 12, 16, 0.555) 100%);
+}
+
+@media (max-width: 400px) {
+    .modal {
+        position: absolute;
+        left: -119%;
+        transform: translate(-50%, -50% );
+        transition: left 1s linear;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        gap: 20px;
+        z-index: 4;
+    }
+    iframe {
+        width: 300px;
+        height: 200px;
+        
+    }
+    .caixa-principal div h3 {
+        color: #fff;
+        font-size: 4rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .caixa-principal div p {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: lighter;
+        padding: 1rem 0;
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    .botão-link {
+        background-color: var(--main-color);
+        cursor: pointer;
+        display: flex;
+        margin-top: 1rem;
+        font-size: 1.7rem;
+        color: #fff;
+        padding: 1rem 3rem;
+        border: none;
+        transition: 0.6s linear;
+        position: absolute;
+        left: 9rem;
+    }
+    nav .scroll-sobre {
+        display: none;
+        
+    }
+    nav {
+        margin-top: 1rem;
+        padding: 1rem;
+        letter-spacing: 2px;
+        line-height: 24px;
+    }
+    .rede-social1 {
+        position: fixed;
+        display: flex;
+        left: 32rem;
+        margin: -10px -10px;
+        bottom: 15px;
+        z-index: 2;
+    }
+    .rede-social2 {
+        position: fixed;
+        display: flex;
+        left: 32rem;
+        margin: -10px -10px;
+        bottom: 70px;
+        z-index: 2;
+    }
 }
