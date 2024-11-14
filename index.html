@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="scripit.js">
-    <title>Erasmo Automotiva-develop</title>
+    <title>Erasmo Automotiva</title>
 </head>
 
 <body>
@@ -22,12 +22,14 @@
     </div>
     <header class="header">
         <section>
-            <a>
+            <a href="#">
                 <img src="./img/logo.png" alt="logo">
             </a>
             <nav>
-                <a>Home</a>
-                <a class="scroll-sobre" onclick="MostrarSobre()">Sobre</a>
+                <a href="#">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#nossoserviços">Nosso Serviços</a>
+                <a href="#review">Avaliações</a>
                 <a onclick="MostraModal()">Endereço</a>
             </nav>
         </section>
@@ -42,8 +44,8 @@
         </div>
 
     </section>
-    <section class="caixa-sobre">
-        <h2 class="titulo"><span>Sobre</span> Nós</h2>
+    <section class="caixa-sobre" id="sobre">
+        <h2 class="titulo" ><span>Sobre</span> Nós</h2>
         <div class="sobre-conteainer">
             <div class="sobre-imagem">
                 <img src="./img/sobre-02.jpg" alt="Sobre Nós">
@@ -56,10 +58,120 @@
                 <p> Contamos com uma equipe especializada em higienização de bancos, hidratação
                     de couro e revitalização de plásticos, garantindo um acabamento de qualidade que supera as
                     expectativas. Escolha a Erasmo para dar ao seu carro o tratamento que ele merece!</p>
-                <a class="botão-link" href="https://api.whatsapp.com/message/RTOTVRZWKRTRF1?autoload=1&app_absent=0" target=_blank rel=noopener
-                noreferrer>Saiba Mais</a>
+                <a class="botão-saiba-mais"
+                    href="https://api.whatsapp.com/message/RTOTVRZWKRTRF1?autoload=1&app_absent=0" target=_blank
+                    rel=noopener noreferrer>Saiba Mais</a>
             </div>
         </div>
+        <section class="N-serviços" id="nossoserviços">
+            <h2>Nosso <span>Serviços</span></h2>
+            <div class="box-container">
+                <div class="box">
+                    <img src="./img/Carros/Carro-removebg-preview.png" alt="carro">
+                    <h3>Lavagem Completa</h3>
+                    <a class="botão-saiba-mais"
+                        href="https://api.whatsapp.com/message/RTOTVRZWKRTRF1?autoload=1&app_absent=0" target=_blank
+                        rel=noopener noreferrer>Fale Conosco</a>
+                </div>
+                <div class="box">
+                    <img src="./img/Carros/Pneu1.png" alt="carro">
+                    <h3>Restauração de Pneu</h3>
+                    <a class="botão-saiba-mais"
+                        href="https://api.whatsapp.com/message/RTOTVRZWKRTRF1?autoload=1&app_absent=0" target=_blank
+                        rel=noopener noreferrer>Fale Conosco</a>
+                </div>
+                <div class="box">
+                    <img src="./img/Motor/Motor1-removebg-preview.png" alt="carro">
+                    <h3>Restauração de Motor</h3>
+                    <a class="botão-saiba-mais"
+                        href="https://api.whatsapp.com/message/RTOTVRZWKRTRF1?autoload=1&app_absent=0" target=_blank
+                        rel=noopener noreferrer>Fale Conosco</a>
+                </div>
+                <div class="box">
+                    <img src="./img/Motos/Moto1-removebg-preview.png" alt="carro">
+                    <h3>Lavagem de Moto</h3>
+                    <a class="botão-saiba-mais"
+                        href="https://api.whatsapp.com/message/RTOTVRZWKRTRF1?autoload=1&app_absent=0" target=_blank
+                        rel=noopener noreferrer>Fale Conosco</a>
+                </div>
+                <div class="box">
+                    <img src="./img/Motos/Limpeza & Restauração.png" alt="carro">
+                    <h3>Lavagem & Restauração</h3>
+                    <a class="botão-saiba-mais"
+                        href="https://api.whatsapp.com/message/RTOTVRZWKRTRF1?autoload=1&app_absent=0" target=_blank
+                        rel=noopener noreferrer>Fale Conosco</a>
+                </div>
+                <div class="box">
+                    <img src="./img/Interno-carro/interno.jpeg" alt="carro">
+                    <h3>Higienização Interna</h3>
+                    <a class="botão-saiba-mais"
+                        href="https://api.whatsapp.com/message/RTOTVRZWKRTRF1?autoload=1&app_absent=0" target=_blank
+                        rel=noopener noreferrer>Fale Conosco</a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="review" id="review">
+        <h2 class="titulo">Nossos <span>Clientes</span></h2>
+        <div class="box-container1">
+            <div class="box">
+                <img width="30" height="20" src="./img/Avaliações/01-Debora.png" alt="Debora">
+                <p>Trabalho muito eficiente, os produtos são todos de primeira qualidade gostei bastante !</p>
+                <h3>Debora Josefa</h3>
+                <div class="star">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                </div>
+            </div>
+            <div class="box-container1">
+                <iv class="box">
+                    <img width="30" height="20" src="./img/Avaliações/02-Renie gomes.png" alt="Renie Gomes">
+                    <p>Cuidado, capricho e atenção aos detalhes na hora de limpar o carro. Recomendo!!!</p>
+                    <h3>Renie Gomes</h3>
+                    <div class="star">
+                        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png"
+                            alt="star--v1" />
+                        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png"
+                            alt="star--v1" />
+                        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png"
+                            alt="star--v1" />
+                        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png"
+                            alt="star--v1" />
+                        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png"
+                            alt="star--v1" />
+                    </div>
+
+            </div>
+            <div class="box-container1">
+                <div class="box">
+                    <img width="30" height="20" src="./img/Avaliações/03-Lidiane Oliveira.png" alt="Lidiane Oliveira">
+                    <p>Os carros ficam brilhando! 🤩</p><br><br><br>
+                    <h3>Lidiane Oliveira</h3>
+                    <div class="star">
+                        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png"
+                            alt="star--v1" />
+                        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png"
+                            alt="star--v1" />
+                        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png"
+                            alt="star--v1" />
+                        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png"
+                            alt="star--v1" />
+                        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png"
+                            alt="star--v1" />
+                    </div>
+                </div>
+
+            </div>
+
+
     </section>
     <div class="modal">
         <h3 class="titulo"><span>Nosso</span> Endereço</h3>
