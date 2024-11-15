@@ -331,7 +331,7 @@ section {
         z-index: 2;
     }
     .modal {
-        display: flex;
+        display:flex;
         flex-direction: column;
         background-color: transparent;
         gap: 20px;
@@ -417,7 +417,7 @@ section {
         display: flex;
     }
     .modal {
-        position: absolute;
+        position: fixed;
         left: -119%;
         transform: translate(-50%, -50%);
         transition: left 1s linear;
