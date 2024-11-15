@@ -312,25 +312,38 @@ section {
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.589) 50%, rgba(10, 12, 16, 0.555) 100%);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1021px) {
+    .rede-social1 {
+        position:sticky;
+        display: flex;
+        left: 95rem;
+        margin: -10px 2px;
+        bottom: 15px;
+        z-index: 2;
+    }
+
+    .rede-social2 {
+        position: sticky;
+        display: flex;
+        left: 95rem;
+        margin: -10px 2px;
+        bottom: 70px;
+        z-index: 2;
+    }
     .modal {
-        position: absolute;
-        left: -119%;
-        transform: translate(-50%, -50%);
-        transition: left 1s linear;
         display: flex;
         flex-direction: column;
         background-color: transparent;
         gap: 20px;
         z-index: 4;
+        position: fixed;
+        top: 50%;
+        left: -109%;
+        transform: translate(-50%, -50%);
+        transition: left 1s linear;
     }
-
-    iframe {
-        width: 300px;
-        height: 200px;
-
-    }
-
+}
+@media (max-width: 600px){
     .caixa-principal div h3 {
         color: #fff;
         font-size: 4rem;
@@ -367,27 +380,57 @@ section {
     }
 
     nav {
-        margin-top: 1rem;
+        margin-top: 7rem;
         padding: 1rem;
-        letter-spacing: 2px;
-        line-height: 24px;
+        letter-spacing: -2px;
+        line-height: 10px;
+        position: fixed;
+        display: flex;
+        left: 10px;
+    }
+    .header section a img {
+        height: 5rem;
+        position: relative;
+        top: -20px;
+        left: 115px;
     }
 
     .rede-social1 {
-        position: fixed;
+        position:sticky;
         display: flex;
-        left: 32rem;
-        margin: -10px -10px;
+        left: 53rem;
+        margin: -10px 2px;
         bottom: 15px;
         z-index: 2;
     }
 
     .rede-social2 {
-        position: fixed;
+        position: sticky;
         display: flex;
-        left: 32rem;
-        margin: -10px -10px;
+        left: 53rem;
+        margin: -10px 2px;
         bottom: 70px;
         z-index: 2;
+    }
+    .header section {
+        justify-content: flex-start;
+        display: flex;
+    }
+    .modal {
+        position: absolute;
+        left: -119%;
+        transform: translate(-50%, -50%);
+        transition: left 1s linear;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        gap: 20px;
+        z-index: 4;
+    }
+
+    .iframe-modal {
+        width: 300px;
+        height: 200px;
+
     }
 }
